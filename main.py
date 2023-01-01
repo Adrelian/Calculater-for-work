@@ -72,10 +72,10 @@ def short_circuit_current(res_wire):
 
 
 def voltage_drop(resistance):
-    current_circuit_section_text_for_user = "Введите ток проходящий на участке цепи"
+    current_circuit_section_text_for_user = "Введите ток потребителя"
     current_circuit_section = check_user_input(current_circuit_section_text_for_user)
 
-    u = current_circuit_section / resistance  # Падение напряжения на участке цепи
+    u = current_circuit_section * resistance  # Падение напряжения на участке цепи
 
 
 
