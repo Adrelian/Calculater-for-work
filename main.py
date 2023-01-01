@@ -17,7 +17,7 @@ def wire_resistance():
     :return: вернуть полученное сопротивление
     """
 
-    current_of_wire = [0.5, 0.75, 1, 1.5, 2.5, 4, 6, 10, 16, 25, 35, 50, 70, 95] # Возможные сечения кабеля
+    current_of_wire = [0.5, 0.75, 1, 1.5, 2.5, 4, 6, 10, 16, 25, 35, 50, 70, 95]  # Возможные сечения кабеля
     # Проверить ввод, сечение должно быть в диапазоне словаря
     while True:
         try:
@@ -65,10 +65,18 @@ def short_circuit_current(res_wire):
 
     r_internal = r_internal_battery / 1000  # Перевод мОм в Ом
 
-    i_acc = (u * quantity_battery) / (r_internal * quantity_battery + res_wire)
+    i_acc = (u * quantity_battery) / (r_internal * quantity_battery + res_wire)  # Ток короткого замыкания
     print(f"Ток короткого замыкания АКБ: {round(i_acc)} A")
 
     return i_acc
+
+
+def voltage_drop(resistance):
+    current_circuit_section_text_for_user = "Введите ток проходящий на участке цепи"
+    current_circuit_section = check_user_input(current_circuit_section_text_for_user)
+
+    u = current_circuit_section / resistance  # Падение напряжения на участке цепи
+
 
 
 common_resistance_wire = wire_resistance()
