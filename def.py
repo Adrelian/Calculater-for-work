@@ -1,9 +1,12 @@
-def check(user_input):
-    try:
-        if
-    except:
-        print("Невозможно превратить в число")
+l = "Введите длину"
 
-n = input("Введите число: ")
-check(n)
-print(n)
+
+def check_user(text):
+    try:
+        number = int(input(f"{text}: "))
+        return number
+    except:
+        print("Ошибка ввода")
+
+
+l = check_user(l)

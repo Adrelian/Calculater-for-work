@@ -1,3 +1,11 @@
+def check_user(text):
+    try:
+        number = int(input(f"{text}: "))
+        return number
+    except:
+        print("Ошибка ввода")
+
+
 def wire_resistance():
     """
     Расчёт сопротивления проводов АКБ.
@@ -11,7 +19,8 @@ def wire_resistance():
     # Проверить ввод, сечение должно быть в диапазоне словаря
     while True:
         try:
-            s = int(input("поперечное сечение (мм2): "))
+            s_text_for_user = "поперечное сечение (мм2)"
+            s = check_user(s_text_for_user)
             if s in current_of_wire:
                 break
             else:
@@ -19,17 +28,16 @@ def wire_resistance():
         except:
             print("Ошибка ввода данных, вводите фигню какую то")
 
-    # Проверить ввод, длина должна быть целым число и больше нуля
-    while True:
-        try:
-            l = abs(int(input("Введите длину перемычки между АКБ (мм): ")))
-            l_positive = abs(int(input("Введите длину провода от автомата до плюсовой клеммы первого АКБ (мм): ")))
-            l_negative = abs(int(input("Введите длину провода от автомата до отрицательной клеммы последнего АКБ (мм): ")))
-            break
-        except:
-            print("Ошибка ввода длинны")
+    l_text_for_user = "Введите длину перемычки между АКБ (мм)"
+    l = check_user(l_text_for_user)
 
-    r_wires = round(((0.017 * (l+l_positive+l_negative)) / s), 2)  # Удельное сопротивление меди 0,017
+    l_positive_text_for_user = "Введите длину провода от автомата до плюсовой клеммы первого АКБ (мм)"
+    l_positive = check_user(l_positive_text_for_user)
+
+    l_negative_text_for_user = "Введите длину провода от автомата до отрицательной клеммы последнего АКБ (мм)"
+    l_negative = check_user(l_positive_text_for_user)
+
+    r_wires = round(((0.017 * (l + l_positive + l_negative)) / s), 2)  # Удельное сопротивление меди 0,017
 
     print("Удельное сопротивление проводника: ", r_wires)
 
