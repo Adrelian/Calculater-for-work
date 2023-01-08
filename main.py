@@ -76,8 +76,10 @@ def voltage_drop(resistance):
     current_circuit_section = check_user_input(current_circuit_section_text_for_user)
 
     u = current_circuit_section * resistance  # Падение напряжения на участке цепи
+    print(f'Падение напряжения для 1 метра кабеля будет составлять {u} V')
 
 
 
 common_resistance_wire = wire_resistance()
 short_circuit_current(common_resistance_wire)
+voltage_drop(common_resistance_wire)
