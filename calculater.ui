@@ -306,7 +306,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
    </widget>
@@ -322,7 +322,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
    </widget>
@@ -338,7 +338,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
    </widget>
@@ -354,7 +354,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
    </widget>
@@ -370,7 +370,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
    </widget>
@@ -386,7 +386,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
    </widget>
@@ -402,7 +402,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
    </widget>
@@ -418,7 +418,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
    </widget>
