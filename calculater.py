@@ -1,7 +1,7 @@
 from PyQt6 import uic
 from PyQt6.QtWidgets import QApplication
 
-Form, Window = uic.loadUiType("dialog.ui")
+Form, Window = uic.loadUiType("calculater.ui")
 
 app = QApplication([])
 window = Window()
