@@ -37,10 +37,15 @@ def click_button_1():
     print("Кнопка записи сечения провода")
     try:
         wire_cross_section = form.input_from_user_1_wire_cross_section.toPlainText()
-        wire_cross_section = int(wire_cross_section)
-        form.output_value_1_wire_cross_section.setText(f"{wire_cross_section} мм2")
-        electric_value['wire_cross_section'] = wire_cross_section
-        print(f"Сечение провода = {electric_value['wire_cross_section']}")
+
+        if wire_cross_section in value_wire:
+            wire_cross_section = int(wire_cross_section)
+            form.output_value_1_wire_cross_section.setText(f"{wire_cross_section} мм2")
+            electric_value['wire_cross_section'] = wire_cross_section
+            print(f"Сечение провода = {electric_value['wire_cross_section']}")
+        else:
+            form.output_value_1_wire_cross_section.setText("Ошибка")
+            form.output_to_user_fault.setText("Ошибка ввода сечения провода")
 
     except:
         form.output_value_1_wire_cross_section.setText("Ошибка")
@@ -56,6 +61,7 @@ def click_button_2():
     try:
         lenght_jumper_battery = form.input_from_user_2_lenght_jumper_battery.toPlainText()
         lenght_jumper_battery = int(lenght_jumper_battery)
+
         form.output_value_2_lenght_jumper_battery.setText(f"{lenght_jumper_battery} мм")
         electric_value['lenght_wire_to_positive'] = lenght_jumper_battery
         print(f"Длинна перемычки между АКБ = {electric_value['lenght_wire_to_positive']} мм")
