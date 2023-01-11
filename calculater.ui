@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1081</width>
-    <height>969</height>
+    <width>1092</width>
+    <height>1057</height>
    </rect>
   </property>
   <property name="sizeIncrement">
@@ -35,7 +35,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
       <underline>false</underline>
       <strikeout>false</strikeout>
       <kerning>false</kerning>
@@ -75,7 +75,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="focusPolicy">
@@ -103,7 +103,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="focusPolicy">
@@ -131,7 +131,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="focusPolicy">
@@ -159,7 +159,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="focusPolicy">
@@ -187,7 +187,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="focusPolicy">
@@ -215,7 +215,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="focusPolicy">
@@ -243,7 +243,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="focusPolicy">
@@ -425,24 +425,24 @@
    <widget class="QTextEdit" name="output_to_user_1_result">
     <property name="geometry">
      <rect>
-      <x>690</x>
+      <x>569</x>
       <y>70</y>
-      <width>380</width>
-      <height>760</height>
+      <width>501</width>
+      <height>651</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
    </widget>
    <widget class="QPushButton" name="start_button">
     <property name="geometry">
      <rect>
-      <x>690</x>
-      <y>850</y>
+      <x>710</x>
+      <y>740</y>
       <width>200</width>
       <height>60</height>
      </rect>
@@ -450,7 +450,7 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="focusPolicy">
@@ -471,14 +471,14 @@
      <rect>
       <x>460</x>
       <y>70</y>
-      <width>200</width>
+      <width>100</width>
       <height>60</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">
@@ -490,14 +490,14 @@
      <rect>
       <x>460</x>
       <y>170</y>
-      <width>200</width>
+      <width>101</width>
       <height>60</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">
@@ -509,14 +509,14 @@
      <rect>
       <x>460</x>
       <y>270</y>
-      <width>200</width>
+      <width>101</width>
       <height>60</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">
@@ -528,14 +528,14 @@
      <rect>
       <x>460</x>
       <y>370</y>
-      <width>200</width>
+      <width>100</width>
       <height>60</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">
@@ -547,14 +547,14 @@
      <rect>
       <x>460</x>
       <y>470</y>
-      <width>200</width>
+      <width>100</width>
       <height>60</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">
@@ -566,14 +566,14 @@
      <rect>
       <x>460</x>
       <y>570</y>
-      <width>200</width>
+      <width>100</width>
       <height>60</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">
@@ -585,14 +585,14 @@
      <rect>
       <x>460</x>
       <y>670</y>
-      <width>200</width>
+      <width>100</width>
       <height>60</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">
@@ -604,8 +604,27 @@
      <rect>
       <x>460</x>
       <y>770</y>
-      <width>200</width>
+      <width>100</width>
       <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="output_to_user_fault">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>900</y>
+      <width>1041</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="font">
@@ -613,9 +632,6 @@
       <family>Times New Roman</family>
       <pointsize>14</pointsize>
      </font>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
     </property>
    </widget>
    <zorder>buttom_1_wire_cross_section</zorder>
@@ -645,13 +661,14 @@
    <zorder>output_value_6_battery_internal_resistance</zorder>
    <zorder>output_value_7_battery_quantity</zorder>
    <zorder>output_value_8_current_consumer</zorder>
+   <zorder>output_to_user_fault</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1081</width>
+     <width>1092</width>
      <height>26</height>
     </rect>
    </property>
