@@ -24,7 +24,7 @@ electric_value = {
     }
 # Словарь сечений проводов и их токов
 value_wire = {
-    '0.5': 11, '0.75': 15, '1': 17, '1.5': 23, '2.5': 30, '4': 41,'6': 50,
+    "0.5": 11, '0.75': 15, '1': 17, '1.5': 23, '2.5': 30, '4': 41, '6': 50,
     '10': 80, '16': 100, '25': 140, '35': 170, '50': 215, '70': 270, '95': 330
     }
 
@@ -168,6 +168,10 @@ def click_button_8():
         electric_value['current_consumer'] = current_consumer
         print(f"Ток потребителя = {electric_value['current_consumer']} А")
 
+        if current_consumer > electric_value["wire_cross_section"]:
+            form.output_to_user_fault.setText(f"Ток {current_consumer}A больше сечения провода {electric_value['wire_cross_section']} мм2")
+
+
     except:
         form.output_value_8_current_consumer.setText("Ошибка")
         form.output_to_user_fault.setText("Ошибка ввода тока потребителя")
@@ -201,13 +205,3 @@ form.start_button.clicked.connect(result)
 
 # Запуск приложения
 app.exec()
-electric_value = {
-    'wire_cross_section': 0,  # Сечение провода
-    'lenght_jumper_battery': 0,  # Длинна перемычек между АКБ
-    'lenght_wire_to_positive': 0,  # Длинна до + контакта автомата
-    'lenght_wire_to_negative': 0,  # Длинна до - контакта автомата
-    'battery_voltage': 0,  # Напряжение одного АКБ
-    'battery_internal_resistance': 0,  # Внутреннее сопротивление одного АКБ
-    'battery_quantity': 0,  # Кол-во АКБ в щите
-    'current_consumer': 0  # Ток потребителя
-}
