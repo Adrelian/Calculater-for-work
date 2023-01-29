@@ -39,13 +39,13 @@ def click_button_1():
         wire_cross_section = form.input_from_user_1_wire_cross_section.toPlainText()
 
         if wire_cross_section in value_wire:
-            wire_cross_section = int(wire_cross_section)
+            wire_cross_section = float(wire_cross_section)
             form.output_value_1_wire_cross_section.setText(f"{wire_cross_section} мм2")
             electric_value['wire_cross_section'] = wire_cross_section
             print(f"Сечение провода = {electric_value['wire_cross_section']}")
         else:
             form.output_value_1_wire_cross_section.setText("Ошибка")
-            form.output_to_user_fault.setText("Ошибка ввода сечения провода")
+            form.output_to_user_fault.setText(f"Сечение провода {wire_cross_section}мм2 не существует")
 
     except:
         form.output_value_1_wire_cross_section.setText("Ошибка")
@@ -205,3 +205,4 @@ form.start_button.clicked.connect(result)
 
 # Запуск приложения
 app.exec()
+
